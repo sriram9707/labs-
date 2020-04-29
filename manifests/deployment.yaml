@@ -13,7 +13,7 @@ spec:
         run: hello-world
     spec:
       containers:
-        - name: hello-world
+        - name: app
           image: gcr.io/google-samples/node-hello:1.0
           ports:
             - containerPort: 8080
