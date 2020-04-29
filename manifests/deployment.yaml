@@ -23,12 +23,12 @@ spec:
              valueFrom:
                configMapRef: 
                  name: certs
-                 value: certificate.crt
+                 key: certificate.crt
            - name: key
              valueFrom:
                configMapRef:
                  name: key
-                 vaue: privateKey.key
+                 key: privateKey.key
 ---
 apiVersion: v1
 kind: Service
