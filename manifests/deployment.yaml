@@ -31,3 +31,14 @@ spec:
      nodePort: 30004
   selector:
     run: app
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: secret-labs
+type: Opaque
+stringData:
+  config.yaml: |-
+    apiUrl: "https://my.api.com/api/v1"
+    username: {{sriram}}
+    password: {{admin123}}
