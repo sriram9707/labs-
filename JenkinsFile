@@ -1,0 +1,38 @@
+pipeline{
+agent (any) {}
+stages() {
+stage('CheckoutCompile'){
+steps{
+git checkout "http://giturl.git -b branchname
+sh 'npm install' 
+## This stage checkout the latest changes made in git repo and install its dependencies.
+}
+}
+stage ('UnitTest') {
+steps {
+sh 'npm run test'
+## This will perform unit testing written along with the source
+}
+}
+stage ('StaticAnalysis')
+steps{
+sh 'npm install sonarqube-scanner --save-dev'
+}
+}
+
+## This stage will perform static analysis for the sources
+stage('Package Artifact'){
+steps{
+sh 'npm package'
+}
+}
+## This will package the application and push it to artifactory
+
+stage('CreateDockerImage'){
+steps{
+sh ' docker build -t https://gituril/DockerFile:tag '
+sh ' docker push image:tag reponame '
+}
+}
+}
+ 
