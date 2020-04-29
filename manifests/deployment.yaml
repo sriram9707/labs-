@@ -53,3 +53,80 @@ stringData:
     apiUrl: "https://my.api.com/api/v1"
     username: {{sriram}}
     password: {{admin123}}
+    
+    
+---
+apiVersion: v1
+data:
+  certificate.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIDmzCCAoOgAwIBAgIJAOcIIpLG3cS4MA0GCSqGSIb3DQEBCwUAMGQxCzAJBgNV
+    BAYTAnh4MQswCQYDVQQIDAJ4eDEMMAoGA1UEBwwDeHh4MQwwCgYDVQQKDAN4eHgx
+    DDAKBgNVBAsMA3h4eDELMAkGA1UEAwwCeHgxETAPBgkqhkiG9w0BCQEWAnh4MB4X
+    DTIwMDQyOTExMDg0MFoXDTIxMDQyOTExMDg0MFowZDELMAkGA1UEBhMCeHgxCzAJ
+    BgNVBAgMAnh4MQwwCgYDVQQHDAN4eHgxDDAKBgNVBAoMA3h4eDEMMAoGA1UECwwD
+    eHh4MQswCQYDVQQDDAJ4eDERMA8GCSqGSIb3DQEJARYCeHgwggEiMA0GCSqGSIb3
+    DQEBAQUAA4IBDwAwggEKAoIBAQCvR0jD+aV7zQX+nOy9o5FsZTzAHCBD1XXzEhH/
+    aBH6v7qJcLfKK6GQ4BelOkrtfSoAZyDyA5XgPpVHf3Dm1Hi+/Mdd3wDFjdLrlf8v
+    CL9UtKFhKmGN/Y5NbrKgwzUs4rY7sVsf05JyXMGYW2ekOi1Ip6dsT82JBf82RhwH
+    jSZkGMXUTZqku8W2BpZpTPAxOO/qC2HmYbZ28COWv/HZSO+1dY/MdcPHBaVFuBZZ
+    s4hrMa/lknXKFNshvzn1og+EYF7yW9tSWHNQFSqZC0nEU8su0vYX16k2ioK/kGNE
+    yXbAUzE0gZiGdYB/rKB/81v/mKlYozyaARSr/4hb/UiWjEPbAgMBAAGjUDBOMB0G
+    A1UdDgQWBBQTq8voIS5VUGuVeR2ynq7dTzDJzTAfBgNVHSMEGDAWgBQTq8voIS5V
+    UGuVeR2ynq7dTzDJzTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQAC
+    rLB+DVVaD6Dr0snxT1BFZ1omTy9P35D95+LKcXzo2wxzAQ583itk9cE/SMqBmhfL
+    WSpX2Sxb+v/1pojiIJjQbQ1BHAA8+3DtATT7g7RsXdE82BRTX31L5wEWvjrGjLzd
+    DiH8Pc9RszeaCTumSB87Txw6vjMCRjrqkOiKo0Whe64gWb4xGhx7+fWR7/22Ph0M
+    ymq1d19EdcwPUk3OL/iOuQYuTXjhnUquDub9aMONAkJQHHTey3AmUGlebsjI7sCs
+    03XO9ihoEIfuICgnOyf8g/77/Wahk1Mcgr2FbnoFd6RFb+guDeT5hlJKz9349T5S
+    boXn5ItFCVaPqLmHiMVX
+    -----END CERTIFICATE-----
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2020-04-29T11:12:21Z"
+  name: certs
+  namespace: labs
+  resourceVersion: "1140954"
+  selfLink: /api/v1/namespaces/labs/configmaps/certs
+  uid: 4f528f4d-99c8-40c7-b812-9166e29292f7
+---
+apiVersion: v1
+data:
+  privateKey.key: |
+    -----BEGIN PRIVATE KEY-----
+    MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCvR0jD+aV7zQX+
+    nOy9o5FsZTzAHCBD1XXzEhH/aBH6v7qJcLfKK6GQ4BelOkrtfSoAZyDyA5XgPpVH
+    f3Dm1Hi+/Mdd3wDFjdLrlf8vCL9UtKFhKmGN/Y5NbrKgwzUs4rY7sVsf05JyXMGY
+    W2ekOi1Ip6dsT82JBf82RhwHjSZkGMXUTZqku8W2BpZpTPAxOO/qC2HmYbZ28COW
+    v/HZSO+1dY/MdcPHBaVFuBZZs4hrMa/lknXKFNshvzn1og+EYF7yW9tSWHNQFSqZ
+    C0nEU8su0vYX16k2ioK/kGNEyXbAUzE0gZiGdYB/rKB/81v/mKlYozyaARSr/4hb
+    /UiWjEPbAgMBAAECggEAfSk77qU/4+19UFkiPDCm0W5hORVcfNPay92leGoKHLH4
+    M9iHhRgu4NMET3oWswtjiLIbtnWU+nH2Cv4X0tz58/dxLbjmRiuF57BObnmilov9
+    iPLIgqoCiYx4hY+fUxP46Rs2ZL2hn4RYwcDTe1QHrg/538AElsnvegQKU+IY/fP7
+    v+fOEo2FWK6gK9WDnQDggTh7/z0NNZ4zQJAo0GpxJ2uS7duobbMragGB94FeruWP
+    /+Flz2IpsGPyS8ikEbfDXx4YcEjTyq+RfKHLAWaGTHV/dpLZwL9Xu8cjMJkMX8lc
+    s1XgxyGmgVid8nE1qJnb0xCOZc943cFD//abSzxVQQKBgQDeRsONSTf5+XRflCFI
+    X5jevJHAHhvVdcuOxmrVbJ5pM3Tc+n9ZqHa59Tfu0Wam3tH0tLkH6x9Tdz7iExPO
+    Sse5+bCsY7ZpRh+fLZkHacLLFxevczGcznIsBojraeKKUvoRA+IhTwS8c1bLGyAG
+    dHpz+NvTLtOLHbsSapLfS6dEcQKBgQDJ3x13agChC41A36oRE242muMVBYYb5O4i
+    zBc5JsU73x1RO5dZiXCH7FscDNa+NWfM7btYGEQtI+D3nqn1ELN50REFbqdEt1mS
+    7IRYlu2w672Ht7o11H/3QnMkAepBT5zpSTbck3iGU5t/GWfGtBfktvZ7Ol9V3Y2y
+    3V59dP8DCwKBgAevdq956p+QCoALhSMVexmod3mnENtOmV00axk6Cjgk+VNyrdiR
+    xJkla2usfdojNis53HPzoz+ljd0PP84QM9uwUHWFdRcqv4kncHUbKQsQn1cHqp17
+    XeM7zpwlKxoRSGgyNC1mqAlEC6o2I+NVP66m2iLxKYtT2dYHLVDfMsdhAoGBAK/4
+    /22+CMhaEosPreduwa91+yezBgHA4VmSAVh/lIUpbBwIz1lstpy2C4H7KyLp2Q9J
+    2PrlRGD5Gr2gINWQ9nLlLWpH2CXNkpbB+GhlQNPt2+y32unb0KUQ1t/3j2XZaZXu
+    jZVgNDscHLuBwPX0vbNRTrGC4+Is3L2jvR+t4jKbAoGBALN9B7GVl1Fl4TExTrqM
+    H18uj5LwSdxRHU583j/O7mUACGgqTeZ9409S+amYnksRxHmIWnHIZmMwohKRZmxi
+    k5kUBa/qh+XAvklosKFV3PZQf9AIfsHu6P6RV5XIHiiV5yo4Q+o12dZH6f546CpL
+    4L+gEEhHsJUgHYfZZfvrOUJn
+    -----END PRIVATE KEY-----
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2020-04-29T11:13:18Z"
+  name: key
+  namespace: labs
+  resourceVersion: "1141058"
+  selfLink: /api/v1/namespaces/labs/configmaps/key
+  uid: 4099a72e-d3f1-4e7c-a53d-1fdfb0ee077b
+
