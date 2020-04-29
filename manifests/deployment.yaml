@@ -50,34 +50,3 @@ stringData:
     password: {{admin123}}
     
     
- ---
- apiVersion: v1
-items:
-- apiVersion: autoscaling/v1
-  kind: HorizontalPodAutoscaler
-  metadata:
-    annotations:
-      autoscaling.alpha.kubernetes.io/conditions: '[{"type":"AbleToScale","status":"True","lastTransitionTime":"2020-04-29T09:24:28Z","reason":"SucceededGetScale","message":"the
-        HPA controller was able to get the target''s current scale"},{"type":"ScalingActive","status":"False","lastTransitionTime":"2020-04-29T09:24:28Z","reason":"FailedGetResourceMetric","message":"the
-        HPA was unable to compute the replica count: missing request for cpu"}]'
-    creationTimestamp: "2020-04-29T09:24:12Z"
-    name: hello-world
-    namespace: labs
-    resourceVersion: "1129164"
-    selfLink: /apis/autoscaling/v1/namespaces/labs/horizontalpodautoscalers/hello-world
-    uid: d46b1473-523d-48ab-8be9-e10c07a725e5
-  spec:
-    maxReplicas: 10
-    minReplicas: 1
-    scaleTargetRef:
-      apiVersion: extensions/v1beta1
-      kind: Deployment
-      name: hello-world
-    targetCPUUtilizationPercentage: 50
-  status:
-    currentReplicas: 2
-    desiredReplicas: 0
-kind: List
-metadata:
-  resourceVersion: ""
-  selfLink: ""
