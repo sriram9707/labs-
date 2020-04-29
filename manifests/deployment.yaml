@@ -20,9 +20,9 @@ spec:
               protocol: TCP
               resources:
           limits:
-            cpu: 500m
+            cpu: 300m
           requests:
-            cpu: 200m
+            cpu: 100m
           
 ---
 apiVersion: v1
